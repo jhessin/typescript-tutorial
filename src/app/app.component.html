@@ -1,49 +1,18 @@
 <div class="container content">
-  <!-- Question Text -->
-  <h2 class="imageTitle">Question</h2>
+  <app-question></app-question>
 
   <!-- Notification -->
-  <div class="notification">
-    <div class="alert alert-success" role="alert">Correct!</div>
-  </div>
+  <app-notification></app-notification>
 
   <!-- Score -->
-  <div class="score">Score: 0</div>
+  <app-score></app-score>
 
   <!-- Card Image Row -->
-  <div class="d-flex flex-row justify-content-center">
-    <!-- Card Images -->
-    <div class="cardContainer card imageCard">
-      <img src="./../assets/bote.png" alt="TODO" class="card-img-top" />
-    </div>
-    <div class="cardContainer card imageCard">
-      <img src="./../assets/diamante.png" alt="TODO" class="card-img-top" />
-    </div>
-  </div>
+  <app-card-row></app-card-row>
 
   <!-- Card Image Row -->
-  <div class="d-flex flex-row justify-content-center">
-    <!-- Card Images -->
-    <div class="cardContainer card imageCard">
-      <img src="./../assets/espada.png" alt="TODO" class="card-img-top" />
-    </div>
-    <div class="cardContainer card imageCard">
-      <img src="./../assets/hacha.png" alt="TODO" class="card-img-top" />
-    </div>
-  </div>
+  <app-card-row></app-card-row>
 
   <!-- Progress Bar -->
-  <div class="d-flex flex-row justify-content-between">
-    <div class="progress w-100">
-      <div
-        class="progress-bar bg-success"
-        role="progressbar"
-        aria-valuenow="80"
-        aria-valuemin="0"
-        aria-valuemax="100"
-        style="width: 80%"
-      ></div>
-    </div>
-    <!-- TODO: add trophy -->
-  </div>
+	<app-progress-bar></app-progress-bar>
 </div>
