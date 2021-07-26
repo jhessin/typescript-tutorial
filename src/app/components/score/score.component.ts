@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './score.component.html',
   styleUrls: ['./score.component.css'],
 })
-export class ScoreComponent {}
+export class ScoreComponent {
+  score = 0;
+}
