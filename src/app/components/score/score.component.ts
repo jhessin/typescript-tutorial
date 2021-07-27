@@ -7,9 +7,5 @@ import { GameService } from '../../game.service';
   styleUrls: ['./score.component.css'],
 })
 export class ScoreComponent {
-  constructor(public gameService: GameService) {
-    console.log(gameService);
-  }
-
-  score: number = 10;
+  constructor(public gameService: GameService) {}
 }
