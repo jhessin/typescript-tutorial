@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GameService } from '../../game.service';
 
 @Component({
   selector: 'app-score',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./score.component.css'],
 })
 export class ScoreComponent {
-  score = 0;
+  constructor(public gameService: GameService) {
+    console.log(gameService);
+  }
+
+  score: number = 10;
 }
