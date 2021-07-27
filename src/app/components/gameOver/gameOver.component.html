@@ -1,0 +1,6 @@
+<div class="game-over">
+	<h2>Time's Up!</h2>
+	<p class="player-score">Your Score: {{gameService.score}}</p>
+	<p class="high-score">High Score: {{gameService.highScore}}</p>
+	<button class="btn-primary" (click)="gameService.startGame()">Play Again</button>
+</div>

@@ -1,18 +1,21 @@
 <div class="container content">
-  <app-question></app-question>
+  <div *ngIf="!gameService.gameEnded; else gameOver">
+    <app-question></app-question>
 
-  <!-- Notification -->
-  <app-notification></app-notification>
+    <!-- Notification -->
+    <app-notification></app-notification>
 
-  <!-- Score -->
-  <app-score></app-score>
+    <!-- Score -->
+    <app-score></app-score>
 
-  <!-- Card Image Row -->
-  <app-card-row></app-card-row>
+    <!-- Card Image Row -->
+    <app-card-row></app-card-row>
 
-  <!-- Card Image Row -->
-  <app-card-row></app-card-row>
+    <!-- Progress Bar -->
+    <app-progress-bar></app-progress-bar>
+  </div>
 
-  <!-- Progress Bar -->
-	<app-progress-bar></app-progress-bar>
+  <ng-template #gameOver>
+    <app-gameover></app-gameover>
+  </ng-template>
 </div>

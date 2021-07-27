@@ -4,3 +4,4 @@ export * from './notification';
 export * from './card';
 export * from './cardRow';
 export * from './progressBar';
+export * from './gameOver';

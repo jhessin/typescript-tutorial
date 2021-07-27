@@ -14,6 +14,7 @@ import {
   CardComponent,
   CardRowComponent,
   ProgressBarComponent,
+  GameOverComponent,
 } from './components';
 
 const Components = [
@@ -24,6 +25,7 @@ const Components = [
   CardComponent,
   CardRowComponent,
   ProgressBarComponent,
+  GameOverComponent,
 ];
 
 @NgModule({

@@ -1,3 +1,5 @@
-<div class="cardContainer card imageCard">
-	<img src="{{imageUrl}}" alt="{{imageName}}" class="card-img-top" />
+<div class="cardContainer card imageCard" 
+		 [ngClass]="classes"
+	(click)="cardClicked()">
+  <img src="{{ imageUrl }}" alt="{{ imageName }}" class="card-img-top" />
 </div>

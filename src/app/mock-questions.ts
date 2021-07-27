@@ -1,6 +1,6 @@
 export const Questions = [
   'bote',
-  'diamente',
+  'diamante',
   'espada',
   'hacha',
   'ladrillos',

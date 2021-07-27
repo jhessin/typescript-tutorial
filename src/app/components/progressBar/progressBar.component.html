@@ -3,10 +3,10 @@
     <div
       class="progress-bar bg-success"
       role="progressbar"
-      aria-valuenow="80"
+      [attr.aria-valuenow]="gameService.timeLeftPercent"
       aria-valuemin="0"
       aria-valuemax="100"
-      style="width: 80%"
+      style="width: {{ gameService.timeLeftPercent }}%"
     ></div>
   </div>
   <fa-icon icon="trophy" class="trophy"></fa-icon>
